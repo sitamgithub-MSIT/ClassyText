@@ -56,4 +56,4 @@ demo = gr.Interface(
     theme="Soft",
     allow_flagging="never",
 )
-demo.launch()
+demo.launch(debug=False)
