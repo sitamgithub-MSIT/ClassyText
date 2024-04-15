@@ -45,13 +45,20 @@ examples = [
     ["I am a professional basketball player", "sports, athlete, chef, politics"],
 ]
 
+# Title and description and article for the interface
+title = "Zero Shot Text Classification"
+description = "Classify text using zero-shot classification with DeBERTa-v3-large-zeroshot model! Provide a text input and a list of candidate labels separated by commas. Read more at the links below."
+article = "<p style='text-align: center'><a href='https://arxiv.org/pdf/2312.17543.pdf' target='_blank'>Building Efficient Universal Classifiers with Natural Language Inference</a> | <a href='https://huggingface.co/MoritzLaurer/deberta-v3-large-zeroshot-v2.0' target='_blank'>Model Page</a></p>"
+
+
 # Launch the interface
 demo = gr.Interface(
     fn=ZeroShotTextClassification,
     inputs=[gr.Textbox(label="Input"), gr.Textbox(label="Candidate Labels")],
     outputs=gr.Label(label="Classification"),
-    title="Zero Shot Text Classification",
-    description="Classify text using zero-shot classification with DeBERTa-v3-large-zeroshot model! Provide a text input and a list of candidate labels separated by commas.",
+    title=title,
+    description=description,
+    article=article,
     examples=examples,
     theme="Soft",
     allow_flagging="never",
