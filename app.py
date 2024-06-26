@@ -2,6 +2,7 @@
 import gradio as gr
 from transformers import pipeline
 
+
 # Load the zero-shot classification model
 classifier = pipeline(
     "zero-shot-classification", model="MoritzLaurer/deberta-v3-large-zeroshot-v2.0"
@@ -24,18 +25,13 @@ def ZeroShotTextClassification(text_input, candidate_labels):
     # Split the candidate labels
     labels = [label.strip(" ") for label in candidate_labels.split(",")]
 
-    # Output dictionary to store the predicted labels and their scores
-    output = {}
-
     # Perform zero-shot classification
     prediction = classifier(text_input, labels)
 
-    # Create a dictionary with the predicted labels and their corresponding scores
-    for i in range(len(prediction["labels"])):
-        output[prediction["labels"][i]] = prediction["scores"][i]
-
-    # Return the output
-    return output
+    return {
+        prediction["labels"][i]: prediction["scores"][i]
+        for i in range(len(prediction["labels"]))
+    }
 
 
 # Examples to display in the interface

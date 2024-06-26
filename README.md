@@ -2,6 +2,16 @@
 
 Zero Shot Classification is a transfer learning method that uses a pre-trained language model to predict a class not seen during training. This project uses a new promising zero-shot text classification model [deberta-v3-large-zeroshot-v2.0](https://huggingface.co/MoritzLaurer/deberta-v3-large-zeroshot-v2.0) from the Hugging Face model hub to classify text into different classes. Models in this series are designed for efficient zeroshot classification with the Hugging Face pipeline. These models can do classification without training data and run on both GPUs and CPUs.
 
+## Project Structure
+
+The project is structured as follows:
+
+- `app.py`: This file contains the code for the Gradio application that uses the zero-shot text classification model to classify text into different classes.
+- `requirements.txt`: This file contains the required dependencies for the project.
+- `LICENSE`: This file contains the license information for the project.
+- `README.md`: This file contains the information about the project.
+- `assets`: This folder contains the screenshots for working on the application.
+
 ## Tech Stack
 
 - Python (for the programming language)
