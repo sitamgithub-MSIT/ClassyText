@@ -1,6 +1,6 @@
 # ClassyText
 
-Zero Shot Classification is a transfer learning method that uses a pre-trained language model to predict a class not seen during training. This project uses a new promising zero-shot text classification model [deberta-v3-large-zeroshot-v2.0](https://huggingface.co/MoritzLaurer/deberta-v3-large-zeroshot-v2.0) from the Hugging Face model hub to classify text into different classes. Models in this series are designed for efficient zeroshot classification with the Hugging Face pipeline. These models can do classification without training data and run on both GPUs and CPUs.
+Zero-shot classification is a transfer learning method that uses a pre-trained language model to predict a class not seen during training. This project uses a new promising zero-shot text classification model [deberta-v3-large-zeroshot-v2.0](https://huggingface.co/MoritzLaurer/deberta-v3-large-zeroshot-v2.0) from the Hugging Face model hub to classify text into different classes. Models in this series are designed for efficient zero-shot classification with the Hugging Face pipeline. These models can classify without training data and run on both GPUs and CPUs.
 
 ## Project Structure
 
@@ -15,7 +15,7 @@ The project is structured as follows:
 ## Tech Stack
 
 - Python (for the programming language)
-- Hugging Face Transformers Library (for the zero shot text classification model)
+- Hugging Face Transformers Library (for the zero-shot text classification model)
 - Gradio (for the web application)
 - Hugging Face Spaces (for hosting the gradio application)
 
@@ -33,7 +33,7 @@ Now, open up your local host and you should see the web application running. For
 
 ## Usage
 
-Once the application is up and running, you can interact with the interface to classify text into different classes of your choice. The model used in this project is a zero-shot text classification model, which means that it can classify text into classes that it has not seen during training. This is a powerful feature that can be used in a variety of applications.
+Once the application is up and running, you can interact with the interface to classify text into different classes of your choice. The model used in this project is a zero-shot text classification model, which means that it can classify text that it has not seen during training. This is a powerful feature that can be used in a variety of applications.
 
 ## Contributing
 
