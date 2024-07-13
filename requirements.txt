@@ -1,5 +1,5 @@
-gradio
-torch
-timm
-sentencepiece
-transformers
+gradio==4.38.1
+torch==2.3.1
+timm==1.0.7
+sentencepiece==0.2.0
+transformers==4.42.4
