@@ -1,6 +1,6 @@
 # ClassyText
 
-Zero-shot classification is a transfer learning method that uses a pre-trained language model to predict a class not seen during training. This project uses a new promising zero-shot text classification model [deberta-v3-large-zeroshot-v2.0](https://huggingface.co/MoritzLaurer/deberta-v3-large-zeroshot-v2.0) from the Hugging Face model hub to classify text into different classes. Models in this series are designed for efficient zero-shot classification with the Hugging Face pipeline. These models can classify without training data and run on both GPUs and CPUs.
+Zero-shot classification is a transfer learning method that uses a pre-trained language model to predict a class not seen during training. This project uses a new promising zero-shot text classification model [ModernBERT-large-zeroshot-v2.0](https://huggingface.co/MoritzLaurer/ModernBERT-large-zeroshot-v2.0) from the Hugging Face model hub to classify text into different classes. Models in this series are designed for efficient zero-shot classification with the Hugging Face pipeline. These models can classify without training data and run on both GPUs and CPUs.
 
 ## Project Structure
 

@@ -1,6 +1,6 @@
 # Necessary imports
 import gradio as gr
-from classytext.classifier.predict import ZeroShotTextClassification
+from src.modernbert.classifier import ZeroShotTextClassification
 
 
 # Examples to display in the interface

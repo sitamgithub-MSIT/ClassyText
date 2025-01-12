@@ -1,8 +1,8 @@
 # Necessary imports
 import sys
 from typing import Dict
-from classytext.logger import logging
-from classytext.exception import CustomExceptionHandling
+from src.logger import logging
+from src.exception import CustomExceptionHandling
 from transformers import pipeline
 import gradio as gr
 

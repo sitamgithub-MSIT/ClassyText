@@ -6,7 +6,7 @@ This module defines a custom exception handling class and a function to get erro
 import sys
 
 # Local imports
-from classytext.logger import logging
+from src.logger import logging
 
 
 # Function Definition to get error message with details of the error (file name and line number) when an error occurs in the program
