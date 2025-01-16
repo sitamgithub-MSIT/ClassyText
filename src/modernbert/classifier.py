@@ -1,16 +1,20 @@
 # Necessary imports
 import sys
 from typing import Dict
-from src.logger import logging
-from src.exception import CustomExceptionHandling
+import torch
 from transformers import pipeline
 import gradio as gr
+
+# Local imports
+from src.logger import logging
+from src.exception import CustomExceptionHandling
 
 
 # Load the zero-shot classification model
 classifier = pipeline(
     "zero-shot-classification",
     model="MoritzLaurer/ModernBERT-large-zeroshot-v2.0",
+    torch_dtype=torch.bfloat16,
 )
 
 
