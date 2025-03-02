@@ -1,4 +1,7 @@
 # Necessary imports
+import warnings
+warnings.filterwarnings("ignore")
+
 import gradio as gr
 from src.modernbert.classifier import ZeroShotTextClassification
 
@@ -39,7 +42,7 @@ demo = gr.Interface(
         ),
         gr.Checkbox(label="Multi-Label", value=False),
     ],
-    outputs=gr.Label(label="Classification"),
+    outputs=gr.Label(label="Classification", num_top_classes=3),
     title=title,
     description=description,
     article=article,
