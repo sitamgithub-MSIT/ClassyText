@@ -22,7 +22,7 @@ def ZeroShotTextClassification(
     text_input: str, candidate_labels: str, multi_label: bool
 ) -> Dict[str, float]:
     """
-    Performs zero-shot classification on the given text input.
+    Performs zero-shot classification on the given text input and candidate labels.
 
     Args:
         - text_input: The input text to classify.
