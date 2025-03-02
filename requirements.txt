@@ -2,4 +2,4 @@ gradio
 torch
 timm
 sentencepiece
-transformers==4.48.0
+transformers
